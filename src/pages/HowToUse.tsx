@@ -58,7 +58,7 @@ export default function HowToUse() {
       <section className="py-12">
         <div className="container mx-auto px-4">
           <h2 className="section-title">📱 할인코드 적용 6단계</h2>
-          <p className="section-subtitle">아래 단계를 따라하면 누구나 쉽게 마이리얼트립 할인코드를 적용할 수 있습니다.</p>
+          <p className="section-subtitle">아래 단계를 따라하면 누구나 쉽게 마이리얼트립 할인코드를 적용할 수 있습니다. 최신 <a href="https://travista.co.kr/myrealtrip-deals-promo-code/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">마이리얼트립 할인쿠폰</a> 정보도 함께 참고해 보세요.</p>
 
           <div className="flex justify-center mb-8">
             <img src="/images/how-to-apply.png" alt="할인코드 적용 가이드 일러스트" className="h-40 object-contain" loading="lazy" />

@@ -43,7 +43,7 @@ export default function DiscountCodes() {
           <span className="badge-accent mb-4 inline-block">2026년 4월 업데이트</span>
           <h1 className="text-3xl md:text-4xl font-extrabold text-secondary-foreground mb-3">마이리얼트립 할인코드 모음</h1>
           <p className="text-secondary-foreground/80 text-lg max-w-2xl mx-auto">
-            현재 사용 가능한 모든 마이리얼트립 할인코드와 프로모션 쿠폰을 한곳에서 확인하세요.
+            현재 사용 가능한 모든 마이리얼트립 할인코드와 프로모션 쿠폰을 한곳에서 확인하세요. <a href="https://solar-revival.co.kr/myrealtrip" target="_blank" rel="noopener noreferrer" className="text-secondary-foreground/90 hover:underline">마이리얼트립 할인쿠폰</a> 관련 추가 정보도 확인해 보세요.
           </p>
         </div>
       </section>
