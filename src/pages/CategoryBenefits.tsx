@@ -9,10 +9,10 @@ const schema = {
   "@type": "Article",
   "headline": "마이리얼트립 카테고리별 할인 혜택 완전 가이드",
   "description": "투어·액티비티, 숙소, 렌터카, 항공권 등 마이리얼트립 카테고리별 할인 혜택과 최적 쿠폰 사용법을 안내합니다.",
-  "datePublished": "2026-03-08",
-  "dateModified": "2026-03-08",
-  "author": { "@type": "Organization", "name": "마이리얼트립 할인쿠폰" },
-  "publisher": { "@type": "Organization", "name": "마이리얼트립 할인쿠폰" },
+  "datePublished": "2026-05-01",
+  "dateModified": "2026-05-07",
+  "author": { "@type": "Organization", "name": "마이리얼트립 쿠폰" },
+  "publisher": { "@type": "Organization", "name": "마이리얼트립 쿠폰" },
 };
 
 const handleCopyCode = (code: string) => {
@@ -117,8 +117,8 @@ export default function CategoryBenefits() {
     <>
       <SchemaOrg
         schema={schema}
-        title="마이리얼트립 할인쿠폰"
-        description="마이리얼트립 할인쿠폰 & 프로모션 코드 완전 정리. 최신 할인코드를 확인하고 최대 5만원 할인받으세요."
+        title="마이리얼트립 쿠폰"
+        description="마이리얼트립 쿠폰 & 프로모션 코드 완전 정리. 최신 할인코드를 확인하고 최대 5만원 할인받으세요."
         canonical="https://lvmrt.agd-offer.co.kr/category-benefits"
       />
 

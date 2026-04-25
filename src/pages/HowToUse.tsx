@@ -39,8 +39,8 @@ export default function HowToUse() {
     <>
       <SchemaOrg
         schema={schema}
-        title="마이리얼트립 할인쿠폰"
-        description="마이리얼트립 할인쿠폰 & 프로모션 코드 완전 정리. 최신 할인코드를 확인하고 최대 5만원 할인받으세요."
+        title="마이리얼트립 쿠폰"
+        description="마이리얼트립 쿠폰 & 프로모션 코드 완전 정리. 최신 할인코드를 확인하고 최대 5만원 할인받으세요."
         canonical="https://lvmrt.agd-offer.co.kr/how-to-use"
       />
 

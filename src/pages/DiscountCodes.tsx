@@ -8,8 +8,8 @@ const AFFILIATE_LINK = "https://myrealt.rip/GVYra5";
 const schema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  "name": "마이리얼트립 할인코드 목록 2026년 4월",
-  "description": "2026년 4월 현재 사용 가능한 마이리얼트립 공식 할인코드 전체 목록",
+  "name": "마이리얼트립 할인코드 목록 2026년 5월",
+  "description": "2026년 5월 현재 사용 가능한 마이리얼트립 공식 할인코드 전체 목록",
   "numberOfItems": 6,
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "HOT20000 - 2만원 할인" },
@@ -32,15 +32,15 @@ export default function DiscountCodes() {
     <>
       <SchemaOrg
         schema={schema}
-        title="마이리얼트립 할인쿠폰"
-        description="마이리얼트립 할인쿠폰 & 프로모션 코드 완전 정리. 최신 할인코드를 확인하고 최대 5만원 할인받으세요."
+        title="마이리얼트립 쿠폰"
+        description="마이리얼트립 쿠폰 & 프로모션 코드 완전 정리. 최신 할인코드를 확인하고 최대 5만원 할인받으세요."
         canonical="https://lvmrt.agd-offer.co.kr/discount-codes"
       />
 
       {/* Header */}
       <section className="navy-gradient py-12 md:py-16">
         <div className="container mx-auto px-4 text-center">
-          <span className="badge-accent mb-4 inline-block">2026년 4월 업데이트</span>
+          <span className="badge-accent mb-4 inline-block">2026년 5월 업데이트</span>
           <h1 className="text-3xl md:text-4xl font-extrabold text-secondary-foreground mb-3">마이리얼트립 할인코드 모음</h1>
           <p className="text-secondary-foreground/80 text-lg max-w-2xl mx-auto">
             현재 사용 가능한 모든 마이리얼트립 할인코드와 프로모션 쿠폰을 한곳에서 확인하세요. <a href="https://solar-revival.co.kr/myrealtrip" target="_blank" rel="noopener noreferrer" className="text-secondary-foreground/90 hover:underline">마이리얼트립 할인쿠폰</a> 관련 추가 정보도 확인해 보세요.

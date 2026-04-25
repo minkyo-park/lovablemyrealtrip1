@@ -22,7 +22,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <nav className="container mx-auto flex items-center justify-between h-16 px-4" aria-label="메인 내비게이션">
           <Link to="/" className="flex items-center gap-2 font-extrabold text-lg text-foreground" onClick={() => setMobileOpen(false)}>
             <Plane className="h-6 w-6 text-primary" />
-            <span>마이리얼트립 할인쿠폰</span>
+            <span>마이리얼트립 쿠폰</span>
           </Link>
 
           {/* Desktop nav */}
@@ -95,9 +95,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="container mx-auto px-4 py-12">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <h3 className="text-lg font-bold mb-3 text-secondary-foreground">마이리얼트립 할인쿠폰</h3>
+              <h3 className="text-lg font-bold mb-3 text-secondary-foreground">마이리얼트립 쿠폰</h3>
               <p className="text-sm opacity-80">
-                <a href="https://xn--bk1b700b1cz40buif.com/dealstore/myrealtrip/" target="_blank" rel="noopener noreferrer" className="text-secondary-foreground hover:underline">마이리얼트립 할인쿠폰</a>과 최신 프로모션 정보를 한곳에서 확인하세요. 2026년 4월 기준 최신 정보를 제공합니다.
+                <a href="https://xn--bk1b700b1cz40buif.com/dealstore/myrealtrip/" target="_blank" rel="noopener noreferrer" className="text-secondary-foreground hover:underline">마이리얼트립 쿠폰</a>과 최신 프로모션 정보를 한곳에서 확인하세요. 2026년 5월 기준 최신 정보를 제공합니다.
               </p>
             </div>
             <div>
@@ -122,7 +122,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             </div>
           </div>
           <div className="border-t border-secondary-foreground/20 mt-8 pt-6 text-center text-xs opacity-60">
-            <p>© 2026 마이리얼트립 할인쿠폰. 본 사이트는 마이리얼트립 제휴 파트너 사이트입니다.</p>
+            <p>© 2026 마이리얼트립 쿠폰. 본 사이트는 마이리얼트립 제휴 파트너 사이트입니다.</p>
             <p className="mt-1">본 사이트의 링크를 통해 예약 시 사이트 운영에 도움이 되는 소정의 수수료를 받을 수 있습니다.</p>
           </div>
         </div>
