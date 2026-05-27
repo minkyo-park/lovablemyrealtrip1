@@ -1,7 +1,7 @@
 import { Copy, ExternalLink } from "lucide-react";
 import { toast } from "sonner";
 
-const AFFILIATE_LINK = "https://myrealt.rip/GVYra5";
+const AFFILIATE_LINK = "https://myrealt.rip/aRT258";
 
 interface CouponCardProps {
   code: string;

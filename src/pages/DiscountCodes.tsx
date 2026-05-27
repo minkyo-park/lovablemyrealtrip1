@@ -3,7 +3,7 @@ import { toast } from "sonner";
 import CouponCard from "@/components/CouponCard";
 import SchemaOrg from "@/components/SchemaOrg";
 
-const AFFILIATE_LINK = "https://myrealt.rip/GVYra5";
+const AFFILIATE_LINK = "https://myrealt.rip/aRT258";
 
 const schema = {
   "@context": "https://schema.org",

@@ -1,7 +1,7 @@
 import { ExternalLink, CheckCircle, AlertTriangle, ArrowRight } from "lucide-react";
 import SchemaOrg from "@/components/SchemaOrg";
 
-const AFFILIATE_LINK = "https://myrealt.rip/GVYra5";
+const AFFILIATE_LINK = "https://myrealt.rip/aRT258";
 
 const schema = {
   "@context": "https://schema.org",
