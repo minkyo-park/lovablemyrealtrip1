@@ -4,28 +4,39 @@ import CouponCard from "@/components/CouponCard";
 import SchemaOrg from "@/components/SchemaOrg";
 
 const AFFILIATE_LINK = "https://myrealt.rip/aRT258";
+const LINKPRICE_LINK = "https://myrealt.rip/ai1986";
 
 const schema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  "name": "마이리얼트립 할인코드 목록 2026년 5월",
-  "description": "2026년 5월 현재 사용 가능한 마이리얼트립 공식 할인코드 전체 목록",
-  "numberOfItems": 6,
+  "name": "마이리얼트립 할인코드 목록 2026년 6월",
+  "description": "2026년 6월 현재 사용 가능한 마이리얼트립 공식 할인코드 전체 목록",
+  "numberOfItems": 8,
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "HOT20000 - 2만원 할인" },
     { "@type": "ListItem", "position": 2, "name": "HOT30000 - 3만원 할인" },
     { "@type": "ListItem", "position": 3, "name": "HOT50000 - 5만원 할인" },
-    { "@type": "ListItem", "position": 4, "name": "가입 즉시 무료 쿠폰" },
-    { "@type": "ListItem", "position": 5, "name": "아시아나항공 제휴 쿠폰" },
-    { "@type": "ListItem", "position": 6, "name": "롯데면세점 제휴 쿠폰" },
+    { "@type": "ListItem", "position": 4, "name": "LINKPRICE3000 - 15만원 결제 시 3,000원 할인 (해외 투어·티켓 전용)" },
+    { "@type": "ListItem", "position": 5, "name": "LINKPRICE1000 - 5만원 결제 시 1,000원 할인 (해외 투어·티켓 전용)" },
+    { "@type": "ListItem", "position": 6, "name": "가입 즉시 무료 쿠폰" },
+    { "@type": "ListItem", "position": 7, "name": "아시아나항공 제휴 쿠폰" },
+    { "@type": "ListItem", "position": 8, "name": "롯데면세점 제휴 쿠폰" },
   ]
 };
 
-const handleCopyCode = (code: string) => {
+const handleCopyCode = (code: string, link: string = AFFILIATE_LINK) => {
   navigator.clipboard.writeText(code);
   toast.success(`"${code}" 코드가 복사되었습니다!`);
-  window.open(AFFILIATE_LINK, "_blank", "noopener,noreferrer");
+  window.open(link, "_blank", "noopener,noreferrer");
 };
+
+const quickCopyCodes: { code: string; link: string }[] = [
+  { code: "HOT20000", link: AFFILIATE_LINK },
+  { code: "HOT30000", link: AFFILIATE_LINK },
+  { code: "HOT50000", link: AFFILIATE_LINK },
+  { code: "LINKPRICE3000", link: LINKPRICE_LINK },
+  { code: "LINKPRICE1000", link: LINKPRICE_LINK },
+];
 
 export default function DiscountCodes() {
   return (
@@ -40,7 +51,7 @@ export default function DiscountCodes() {
       {/* Header */}
       <section className="navy-gradient py-12 md:py-16">
         <div className="container mx-auto px-4 text-center">
-          <span className="badge-accent mb-4 inline-block">2026년 5월 업데이트</span>
+          <span className="badge-accent mb-4 inline-block">2026년 6월 업데이트</span>
           <h1 className="text-3xl md:text-4xl font-extrabold text-secondary-foreground mb-3">마이리얼트립 할인코드 모음</h1>
           <p className="text-secondary-foreground/80 text-lg max-w-2xl mx-auto">
             현재 사용 가능한 모든 마이리얼트립 할인코드와 프로모션 쿠폰을 한곳에서 확인하세요. <a href="https://solar-revival.co.kr/myrealtrip" target="_blank" rel="noopener noreferrer" className="text-secondary-foreground/90 hover:underline">마이리얼트립 할인쿠폰</a> 관련 추가 정보도 확인해 보세요.
@@ -120,6 +131,75 @@ export default function DiscountCodes() {
                 </tbody>
               </table>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* LINKPRICE Overseas Tour & Ticket Coupons */}
+      <section className="py-12 bg-muted/50">
+        <div className="container mx-auto px-4">
+          <h2 className="section-title">✈️ 해외 투어·티켓 전용 쿠폰 (LINKPRICE)</h2>
+          <p className="section-subtitle">해외 투어·티켓 상품에만 사용 가능한 전용 할인 쿠폰입니다. 발급 기간: 2026년 6월 1일~6월 30일, 사용 기간: 발급일로부터 7일 이내. 선착순 한정 수량으로 예산 소진 시 별도 안내 없이 종료됩니다.</p>
+
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-8">
+            <CouponCard
+              code="LINKPRICE3000"
+              discount="3,000원 할인 (약 2%)"
+              description="해외 투어·티켓 상품 전용 쿠폰입니다. 15만 원 이상 결제 시 3,000원이 할인됩니다."
+              image="/images/hot30000.png"
+              category="해외 투어·티켓 전용"
+              conditions="15만 원 결제 시 적용 / 발급 후 7일 이내 사용 / 선착순 한정 수량 · 예산 소진 시 종료 · 일부 상품 사용 불가 · 타 쿠폰 중복 불가"
+              link={LINKPRICE_LINK}
+            />
+            <CouponCard
+              code="LINKPRICE1000"
+              discount="1,000원 할인 (약 2%)"
+              description="해외 투어·티켓 상품 전용 쿠폰입니다. 5만 원 이상 결제 시 1,000원이 할인됩니다."
+              image="/images/hot20000.png"
+              category="해외 투어·티켓 전용"
+              conditions="5만 원 결제 시 적용 / 발급 후 7일 이내 사용 / 선착순 한정 수량 · 예산 소진 시 종료 · 일부 상품 사용 불가 · 타 쿠폰 중복 불가"
+              link={LINKPRICE_LINK}
+            />
+          </div>
+
+          {/* LINKPRICE comparison */}
+          <div className="card-elevated p-6 mb-8">
+            <h3 className="text-xl font-bold mb-4">📊 해외 투어·티켓 전용 쿠폰 비교</h3>
+            <div className="overflow-x-auto">
+              <table className="table-responsive">
+                <thead>
+                  <tr>
+                    <th>코드명</th>
+                    <th>할인 금액</th>
+                    <th>최소 결제 금액</th>
+                    <th>할인율</th>
+                    <th>적용 상품</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-label="코드명" className="font-mono font-bold">LINKPRICE3000</td>
+                    <td data-label="할인 금액">3,000원</td>
+                    <td data-label="최소 결제 금액">15만 원</td>
+                    <td data-label="할인율">약 2%</td>
+                    <td data-label="적용 상품">해외 투어·티켓</td>
+                  </tr>
+                  <tr>
+                    <td data-label="코드명" className="font-mono font-bold">LINKPRICE1000</td>
+                    <td data-label="할인 금액">1,000원</td>
+                    <td data-label="최소 결제 금액">5만 원</td>
+                    <td data-label="할인율">약 2%</td>
+                    <td data-label="적용 상품">해외 투어·티켓</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="text-xs text-muted-foreground mt-4">
+              발급 기간 2026.06.01~06.30 · 사용 기간 발급일로부터 7일 이내 · 선착순 한정 수량(예산 소진 시 별도 안내 없이 종료) · 일부 상품 사용 불가 · 타 쿠폰 중복 사용 불가.
+            </p>
+            <a href={LINKPRICE_LINK} target="_blank" rel="noopener noreferrer" className="cta-button text-sm mt-4 justify-center">
+              <ExternalLink className="h-4 w-4" /> 전용 링크에서 쿠폰 받기
+            </a>
           </div>
         </div>
       </section>
@@ -301,10 +381,10 @@ export default function DiscountCodes() {
           <h2 className="section-title text-center">⚡ 빠른 코드 복사</h2>
           <p className="section-subtitle text-center">코드를 클릭하면 복사 후 마이리얼트립 페이지가 열립니다.</p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-2xl mx-auto">
-            {["HOT20000", "HOT30000", "HOT50000"].map((code) => (
+            {quickCopyCodes.map(({ code, link }) => (
               <button
                 key={code}
-                onClick={() => handleCopyCode(code)}
+                onClick={() => handleCopyCode(code, link)}
                 className="coupon-code-display cursor-pointer hover:bg-primary/5 transition-colors flex items-center justify-center gap-2"
               >
                 <Copy className="h-4 w-4 text-primary" /> {code}

@@ -9,8 +9,8 @@ const schema = {
   "@type": "Article",
   "headline": "마이리얼트립 카테고리별 할인 혜택 완전 가이드",
   "description": "투어·액티비티, 숙소, 렌터카, 항공권 등 마이리얼트립 카테고리별 할인 혜택과 최적 쿠폰 사용법을 안내합니다.",
-  "datePublished": "2026-05-01",
-  "dateModified": "2026-05-07",
+  "datePublished": "2026-06-01",
+  "dateModified": "2026-06-07",
   "author": { "@type": "Organization", "name": "마이리얼트립 쿠폰" },
   "publisher": { "@type": "Organization", "name": "마이리얼트립 쿠폰" },
 };

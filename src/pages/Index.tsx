@@ -11,7 +11,7 @@ const schema = [
     "@type": "WebSite",
     "name": "마이리얼트립 쿠폰",
     "url": "https://lvmrt.agd-offer.co.kr",
-    "description": "5월 마이리얼트립 쿠폰 총정리! 최신 할인코드와 마이리얼트립 쿠폰 받는 법까지 한 번에. 지금 바로 쓸 수 있는 쿠폰 모음, 5월 여행 예약 전 할인쿠폰 받아서 더 저렴하게 예약하세요!",
+    "description": "6월 마이리얼트립 쿠폰 총정리! 최신 할인코드와 마이리얼트립 쿠폰 받는 법까지 한 번에. 지금 바로 쓸 수 있는 쿠폰 모음, 6월 여행 예약 전 할인쿠폰 받아서 더 저렴하게 예약하세요!",
     "inLanguage": "ko",
   },
   {
@@ -28,7 +28,7 @@ const schema = [
       },
       {
         "@type": "Question",
-        "name": "2026년 5월 사용 가능한 마이리얼트립 할인코드는?",
+        "name": "2026년 6월 사용 가능한 마이리얼트립 할인코드는?",
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "HOT20000(2만원), HOT30000(3만원), HOT50000(5만원) 핫딜 쿠폰코드와 가입 즉시 다운로드 쿠폰이 있습니다."
@@ -71,7 +71,7 @@ export default function Index() {
       <SchemaOrg
         schema={schema}
         title="마이리얼트립 쿠폰"
-        description="5월 마이리얼트립 쿠폰 총정리! 최신 할인코드와 마이리얼트립 쿠폰 받는 법까지 한 번에. 지금 바로 쓸 수 있는 쿠폰 모음, 5월 여행 예약 전 할인쿠폰 받아서 더 저렴하게 예약하세요!"
+        description="6월 마이리얼트립 쿠폰 총정리! 최신 할인코드와 마이리얼트립 쿠폰 받는 법까지 한 번에. 지금 바로 쓸 수 있는 쿠폰 모음, 6월 여행 예약 전 할인쿠폰 받아서 더 저렴하게 예약하세요!"
         canonical="https://lvmrt.agd-offer.co.kr/"
       />
 
@@ -79,7 +79,7 @@ export default function Index() {
       <section className="hero-gradient py-16 md:py-24 relative overflow-hidden">
         <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-8">
           <div className="flex-1 text-center md:text-left">
-            <span className="badge-accent mb-4 inline-block">2026년 5월 최신</span>
+            <span className="badge-accent mb-4 inline-block">2026년 6월 최신</span>
             <h1 className="text-3xl md:text-5xl font-extrabold text-primary-foreground mb-4 leading-tight">
               마이리얼트립 할인쿠폰<br />최대 5만 원 할인
             </h1>
@@ -126,7 +126,7 @@ export default function Index() {
       <section className="py-12">
         <div className="container mx-auto px-4">
           <h2 className="section-title text-center">🎟️ 지금 사용 가능한 인기 할인코드</h2>
-          <p className="section-subtitle text-center">2026년 5월 기준, 검증된 마이리얼트립 핫딜 쿠폰코드입니다.</p>
+          <p className="section-subtitle text-center">2026년 6월 기준, 검증된 마이리얼트립 핫딜 쿠폰코드입니다.</p>
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
             {topCoupons.map((coupon) => (
               <CouponCard key={coupon.code} {...coupon} />

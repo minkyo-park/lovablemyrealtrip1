@@ -10,17 +10,21 @@ interface CouponCardProps {
   image: string;
   category?: string;
   conditions?: string;
+  /** Optional dedicated link. Falls back to the default affiliate link when not provided. */
+  link?: string;
 }
 
-export default function CouponCard({ code, discount, description, image, category, conditions }: CouponCardProps) {
+export default function CouponCard({ code, discount, description, image, category, conditions, link }: CouponCardProps) {
+  const targetLink = link ?? AFFILIATE_LINK;
+
   const handleCopy = () => {
     navigator.clipboard.writeText(code);
     toast.success(`"${code}" 코드가 복사되었습니다!`);
-    window.open(AFFILIATE_LINK, "_blank", "noopener,noreferrer");
+    window.open(targetLink, "_blank", "noopener,noreferrer");
   };
 
   const handleApply = () => {
-    window.open(AFFILIATE_LINK, "_blank", "noopener,noreferrer");
+    window.open(targetLink, "_blank", "noopener,noreferrer");
   };
 
   return (
