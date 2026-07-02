@@ -1,8 +1,8 @@
+import type { RouteRecord } from "vite-react-ssg";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
-import { HelmetProvider } from "react-helmet-async";
+import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import Layout from "./components/Layout";
 import Index from "./pages/Index";
@@ -21,26 +21,30 @@ function ScrollToTop() {
   return null;
 }
 
-const App = () => (
-  <HelmetProvider>
+function RootLayout() {
+  return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <Sonner />
-        <BrowserRouter>
-          <ScrollToTop />
-          <Layout>
-            <Routes>
-              <Route path="/" element={<Index />} />
-              <Route path="/discount-codes" element={<DiscountCodes />} />
-              <Route path="/how-to-use" element={<HowToUse />} />
-              <Route path="/category-benefits" element={<CategoryBenefits />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </Layout>
-        </BrowserRouter>
+        <ScrollToTop />
+        <Layout />
       </TooltipProvider>
     </QueryClientProvider>
-  </HelmetProvider>
-);
+  );
+}
 
-export default App;
+export const routes: RouteRecord[] = [
+  {
+    path: "/",
+    element: <RootLayout />,
+    children: [
+      { index: true, element: <Index /> },
+      { path: "discount-codes", element: <DiscountCodes /> },
+      { path: "how-to-use", element: <HowToUse /> },
+      { path: "category-benefits", element: <CategoryBenefits /> },
+      { path: "*", element: <NotFound /> },
+    ],
+  },
+];
+
+export default routes;

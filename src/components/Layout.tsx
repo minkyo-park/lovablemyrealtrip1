@@ -1,4 +1,4 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link, Outlet, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { Menu, X, Plane } from "lucide-react";
 
@@ -11,7 +11,7 @@ const navItems = [
   { path: "/category-benefits", label: "카테고리별 혜택" },
 ];
 
-export default function Layout({ children }: { children: React.ReactNode }) {
+export default function Layout() {
   const location = useLocation();
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -88,7 +88,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       </header>
 
       {/* Main */}
-      <main className="flex-1">{children}</main>
+      <main className="flex-1"><Outlet /></main>
 
       {/* Footer */}
       <footer className="bg-secondary text-secondary-foreground mt-16">

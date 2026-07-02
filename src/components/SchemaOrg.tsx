@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { Head } from "vite-react-ssg";
 
 interface SchemaOrgProps {
   schema: Record<string, unknown> | Record<string, unknown>[];
@@ -9,11 +9,11 @@ interface SchemaOrgProps {
 
 export default function SchemaOrg({ schema, title, description, canonical }: SchemaOrgProps) {
   return (
-    <Helmet>
+    <Head>
       <title>{title}</title>
       <meta name="description" content={description} />
       <link rel="canonical" href={canonical} />
       <script type="application/ld+json">{JSON.stringify(schema)}</script>
-    </Helmet>
+    </Head>
   );
 }
