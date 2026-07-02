@@ -97,7 +97,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <div>
               <h3 className="text-lg font-bold mb-3 text-secondary-foreground">마이리얼트립 쿠폰</h3>
               <p className="text-sm opacity-80">
-                <a href="https://xn--bk1b700b1cz40buif.com/dealstore/myrealtrip/" target="_blank" rel="noopener noreferrer" className="text-secondary-foreground hover:underline">마이리얼트립 쿠폰</a>과 최신 프로모션 정보를 한곳에서 확인하세요. 2026년 6월 기준 최신 정보를 제공합니다.
+                <a href="https://xn--bk1b700b1cz40buif.com/dealstore/myrealtrip/" target="_blank" rel="noopener noreferrer" className="text-secondary-foreground hover:underline">마이리얼트립 쿠폰</a>과 최신 프로모션 정보를 한곳에서 확인하세요. 2026년 7월 기준 최신 정보를 제공합니다.
               </p>
             </div>
             <div>

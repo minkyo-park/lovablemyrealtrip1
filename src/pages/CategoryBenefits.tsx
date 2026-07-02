@@ -326,7 +326,7 @@ export default function CategoryBenefits() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
-              { season: "봄 (3~5월)", emoji: "🌸", dest: "일본 벚꽃, 동남아", tip: "시즌 기획전 + HOT30000", img: "/images/season-special.png" },
+              { season: "봄 (3~7월)", emoji: "🌸", dest: "일본 벚꽃, 동남아", tip: "시즌 기획전 + HOT30000", img: "/images/season-special.png" },
               { season: "여름 (6~8월)", emoji: "🏖️", dest: "괌, 하와이, 유럽", tip: "장기 숙박 HOT50000 + 카드 할인", img: "/images/hotel-deals.png" },
               { season: "가을 (9~11월)", emoji: "🍂", dest: "유럽, 미국 동부", tip: "투어 HOT50000 + 아시아나 제휴", img: "/images/tour-activity.png" },
               { season: "겨울 (12~2월)", emoji: "⛷️", dest: "오키나와, 호주, 스키", tip: "렌터카 25% + 가입쿠폰", img: "/images/rental-car.png" },

@@ -9,8 +9,8 @@ const LINKPRICE_LINK = "https://myrealt.rip/ai1986";
 const schema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  "name": "마이리얼트립 할인코드 목록 2026년 6월",
-  "description": "2026년 6월 현재 사용 가능한 마이리얼트립 공식 할인코드 전체 목록",
+  "name": "마이리얼트립 할인코드 목록 2026년 7월",
+  "description": "2026년 7월 현재 사용 가능한 마이리얼트립 공식 할인코드 전체 목록",
   "numberOfItems": 8,
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "HOT20000 - 2만원 할인" },
@@ -51,7 +51,7 @@ export default function DiscountCodes() {
       {/* Header */}
       <section className="navy-gradient py-12 md:py-16">
         <div className="container mx-auto px-4 text-center">
-          <span className="badge-accent mb-4 inline-block">2026년 6월 업데이트</span>
+          <span className="badge-accent mb-4 inline-block">2026년 7월 업데이트</span>
           <h1 className="text-3xl md:text-4xl font-extrabold text-secondary-foreground mb-3">마이리얼트립 할인코드 모음</h1>
           <p className="text-secondary-foreground/80 text-lg max-w-2xl mx-auto">
             현재 사용 가능한 모든 마이리얼트립 할인코드와 프로모션 쿠폰을 한곳에서 확인하세요. <a href="https://solar-revival.co.kr/myrealtrip" target="_blank" rel="noopener noreferrer" className="text-secondary-foreground/90 hover:underline">마이리얼트립 할인쿠폰</a> 관련 추가 정보도 확인해 보세요.
@@ -139,7 +139,7 @@ export default function DiscountCodes() {
       <section className="py-12 bg-muted/50">
         <div className="container mx-auto px-4">
           <h2 className="section-title">✈️ 해외 투어·티켓 전용 쿠폰 (LINKPRICE)</h2>
-          <p className="section-subtitle">해외 투어·티켓 상품에만 사용 가능한 전용 할인 쿠폰입니다. 발급 기간: 2026년 6월 1일~6월 30일, 사용 기간: 발급일로부터 7일 이내. 선착순 한정 수량으로 예산 소진 시 별도 안내 없이 종료됩니다.</p>
+          <p className="section-subtitle">해외 투어·티켓 상품에만 사용 가능한 전용 할인 쿠폰입니다. 발급 기간: 2026년 7월 1일~7월 30일, 사용 기간: 발급일로부터 7일 이내. 선착순 한정 수량으로 예산 소진 시 별도 안내 없이 종료됩니다.</p>
 
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-8">
             <CouponCard
